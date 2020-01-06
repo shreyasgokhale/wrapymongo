@@ -177,3 +177,19 @@ class driver:
         except Exception as e:
             print("An error occured:" + str(e))
             return False
+
+    
+    def sortRecords(self, sortSON, limit = 100):
+        """
+        Aggregate based on given pipeline.
+
+        :param sortSON: SON object stating your operations.
+        :param limit: Limit records, by default 100
+        :return: result
+        """
+        try:
+            result = list(self.collection.find().sort(sortSON).limit(limit))
+            return result
+
+        except Exception as e:
+            print("An error occured:" + str(e))

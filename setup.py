@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='wrapymongo',
-      version='0.1',
+      version='0.2',
       description='A wrapper for pymonogo driver',
       url='http://github.com/shreyasgokhale/wrapymongo',
       author='Shreyas Gokhale',
@@ -13,6 +13,7 @@ setup(name='wrapymongo',
       install_requires=[
           'pymongo',
       ],
+      download_url = 'https://github.com/shreyasgokhale/wrapymongo/archive/v_02.tar.gz',
       classifiers=[
           # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
           'Development Status :: 3 - Alpha',
